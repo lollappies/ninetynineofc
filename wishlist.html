@@ -1,0 +1,36 @@
+<!-- wishlist.html — extracted section from index.html -->
+<!-- This file is for reference. The actual page is in index.html -->
+
+id="wishlistPage" style="display:none;position:fixed;inset:0;z-index:9999;background:#fff;overflow-y:auto;">
+  <header style="position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid #eee;padding:0 clamp(12px,4vw,48px);">
+    <div style="max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:500;letter-spacing:0.04em;">Ninetynine</span>
+        <span style="font-family:'DM Sans',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#888;">/ Wishlist</span>
+      </div>
+      <button onclick="closeWishlistPage()" style="background:none;border:1px solid #ddd;border-radius:50%;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;color:#333;transition:all 0.2s;" onmouseover="this.style.background='#000';this.style.color='#fff'" onmouseout="this.style.background='none';this.style.color='#333'">×</button>
+    </div>
+  </header>
+  <div style="max-width:1440px;margin:0 auto;padding:40px clamp(12px,4vw,48px) 80px;">
+    <div style="margin-bottom:32px;display:flex;align-items:baseline;gap:12px;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,40px);font-weight:500;margin:0;">My Wishlist</h1>
+      <span id="wishlistCount" style="font-family:'DM Sans',sans-serif;font-size:11px;color:#888;letter-spacing:0.1em;"></span>
+    </div>
+    <div id="wishlistEmpty" style="display:none;text-align:center;padding:80px 0;">
+      <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#ccc" stroke-width="1.5" style="margin-bottom:16px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      <p style="font-family:'DM Sans',sans-serif;color:#999;font-size:14px;margin:0 0 8px;">Wishlist kamu masih kosong</p>
+      <p style="font-family:'DM Sans',sans-serif;color:#bbb;font-size:12px;">Klik ikon ♡ pada produk untuk menyimpannya di sini</p>
+    </div>
+    <div id="wishlistGrid" class="product-grid" style="grid-template-columns:repeat(auto-fill,minmax(min(160px,calc(50% - 8px)),1fr));gap:20px 14px;"></div>
+  </div>
+</div>
+
+<!-- LOOKS PAGE -->
+<div id="looksPage" style="display:none;position:fixed;inset:0;z-index:9999;background:#fff;overflow-y:auto;">
+  <header style="position:sticky;top:0;background:#fff;z-index:10;border-bottom:1px solid #eee;padding:0 clamp(12px,4vw,48px);">
+    <div style="max-width:1440px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:500;letter-spacing:0.04em;">Ninetynine</span>
+        <span style="font-family:'DM Sans',sans-se
+
+... (truncated for readability)

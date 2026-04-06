@@ -1,0 +1,36 @@
+<!-- product-detail.html — extracted section from index.html -->
+<!-- This file is for reference. The actual page is in index.html -->
+
+<!-- PRODUCT DETAIL PAGE -->
+<div id="productDetailPage" style="display:none;position:fixed;inset:0;z-index:9998;background:#fff;overflow-y:auto;">
+  <!-- Sticky header -->
+  <header style="position:sticky;top:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);z-index:10;border-bottom:1px solid #f0f0f0;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,48px);display:flex;align-items:center;justify-content:space-between;height:64px;">
+      <button onclick="closeProductDetail()" style="background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:8px;color:#555;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.1em;padding:6px 0;transition:color 0.2s;" onmouseover="this.style.color='#000'" onmouseout="this.style.color='#555'">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back
+      </button>
+      <span style="font-family:'Playfair Display',serif;font-size:18px;font-weight:500;letter-spacing:0.04em;">Ninetynine</span>
+      <button id="pdCartBtn" onclick="openCartPage()" style="background:none;border:none;cursor:pointer;position:relative;padding:6px;color:#333;" title="Cart">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span id="pdCartBadge" style="display:none;position:absolute;top:0;right:0;background:#B85252;color:#fff;border-radius:50%;width:16px;height:16px;font-size:9px;font-family:'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;font-weight:600;"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <div style="max-width:1200px;margin:0 auto;padding:32px clamp(16px,4vw,48px) 80px;">
+    <div id="pdContent" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      
+      <!-- Left: Images -->
+      <div>
+        <div id="pdMainImg" style="border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:#f5f5f5;margin-bottom:12px;cursor:zoom-in;">
+          <img id="pdImg1" src="" style="width:100%;height:100%;object-fit:cover;object-position:center top;transition:opacity 0.3s;">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <div id="pdThumb1" style="border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f5f5f5;cursor:pointer;border:2px solid #111;">
+            <img id="pdThumbImg1" src="" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+          </div>
+          <div id="pdThumb2" style="border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#f5f5f5;cursor:pointer;border:2px solid transpar
+
+... (truncated for readability)

@@ -1,0 +1,40 @@
+<!-- cart.html — extracted section from index.html -->
+<!-- This file is for reference. The actual page is in index.html -->
+
+<!-- CART PAGE -->
+<div id="cartPage" style="display:none;position:fixed;inset:0;z-index:9997;background:#f5f5f5;overflow-y:auto;">
+
+  <!-- Sticky Header -->
+  <header style="position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #eee;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+    <div style="max-width:960px;margin:0 auto;padding:0 16px;display:flex;align-items:center;height:56px;gap:14px;">
+      <button onclick="closeCartPage()" style="background:none;border:none;cursor:pointer;display:flex;align-items:center;color:#555;padding:4px;transition:color 0.2s;" onmouseover="this.style.color='#111'" onmouseout="this.style.color='#555'">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+      <span style="font-family:'Playfair Display',serif;font-size:17px;font-weight:500;flex:1;">Shopping Cart</span>
+      <span id="cartItemCount" style="font-family:'DM Sans',sans-serif;font-size:12px;color:#888;"></span>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <div style="max-width:960px;margin:0 auto;padding:12px 16px 140px;">
+
+    <!-- Empty state -->
+    <div id="cartEmpty" style="display:none;text-align:center;padding:80px 20px;">
+      <div style="width:80px;height:80px;background:#f0f0f0;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#bbb" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      </div>
+      <p style="font-family:'DM Sans',sans-serif;font-size:15px;color:#888;margin:0 0 6px;">Keranjang kamu kosong</p>
+      <p style="font-family:'DM Sans',sans-serif;font-size:12px;color:#bbb;margin:0 0 20px;">Yuk, tambahkan produk favorit kamu!</p>
+      <button onclick="closeCartPage()" style="padding:10px 28px;background:#111;color:#fff;border:none;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:12px;letter-spacing:0.12em;cursor:pointer;">Belanja Sekarang</button>
+    </div>
+
+    <!-- Seller group card -->
+    <div id="cartItems" style="display:none;flex-direction:column;gap:10px;">
+
+      <!-- Select all bar -->
+      <div style="background:#fff;border-radius:10px;padding:12px 16px;display:flex;align-items:center;gap:10px;">
+        <input type="checkbox" id="selectAllCart" onchange="toggleSelectAll(this.checked)" style="width:18px;height:18px;accent-color:#D84040;cursor:pointer;">
+        <label for="selectAllCart" style="font-family:'DM Sans',sans-serif;font-size:13px;color:#333;cursor:pointer;">Pilih Semua</label>
+        <button onclick="deleteSelected()" style="margin-left:auto;background:none;border:none;font-family:'DM Sans',sans-serif;font-size:12px;color:#D84040;cursor:pointer;padding:4px 8px;border-radius:4px;transiti
+
+... (truncated for readability)
